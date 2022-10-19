@@ -1,0 +1,1 @@
+#Znak "_" zwraca w trybie interaktywnym wartość ostatniego obliczonego wyrażenia, np.: jesli podamy 1+2, a pozniej 1*2, to wpisujac znak "_", otrzymamy ostatnia obliczona wartosc, czyli w tym wypadku 2
