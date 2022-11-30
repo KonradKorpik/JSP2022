@@ -5,9 +5,5 @@ x = input("Podaj liczbe poziomow: ")
 line = [1]
 write_list(line)
 for i in range(int(x) - 1):
-    next_line = [1]
-    for j in range(len(line) - 1):
-        next_line.append(line[j] + line[j + 1])
-    next_line.append(1)
-    line = next_line
+    line = [1] + [x + y for x, y in zip(line[1:], line[:-1])] + [1]
     write_list(line)
