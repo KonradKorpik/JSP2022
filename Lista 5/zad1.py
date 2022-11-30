@@ -33,15 +33,9 @@ def zamiana(liczba):
         i = lista.index(" ")
         dziesiatek = "".join(lista[:i])
         jednosci = "".join(lista[i + 1:])
-        for x, y in liczby.items():
-            if dziesiatek == x:
-                wynik += y
-            elif jednosci == x:
-                wynik += y
+        wynik = liczby[dziesiatek] + liczby[jednosci]
     else:
-        for x, y in liczby.items():
-            if liczba == x:
-                wynik = y       
+        wynik = liczby[liczba]
     return wynik
     
 licz = input("Podaj liczbe slownie: ")
